@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Feedback and template requests | Sparta Labs</title>
+<meta name="description" content="Tell Sparta Labs what's working in our templates and what to improve or add.">
+<link rel="canonical" href="https://spartasite.com/feedback/">
+<link rel="icon" href="../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sparta Labs">
+<meta property="og:title" content="Feedback and template requests | Sparta Labs">
+<meta property="og:description" content="Tell Sparta Labs what's working in our templates and what to improve or add.">
+<meta property="og:url" content="https://spartasite.com/feedback/">
+<meta property="og:image" content="https://spartasite.com/images/dashboard.png">
+<link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+<header class="site-header"><div class="wrap nav">
+<a class="brand" href="../"><img src="../favicon.svg" alt="" width="28" height="28">Sparta Labs</a>
+<nav><a href="../#products">Products</a><a href="./">Feedback</a><a href="../#contact">Contact</a></nav>
+</div></header>
+<main>
+
+<section class="section"><div class="wrap narrow">
+<h1 class="page-title">Feedback and template requests</h1>
+<p>Tell us what's working, what's missing, or what template you'd like next. When you press Send, your email app opens with your answers filled in. Nothing is sent until you send that email.</p>
+<p class="note">Please don't include any client information, names, or health details.</p>
+<form id="fb" class="form" novalidate>
+<label for="product">Product <span class="req">(required)</span></label>
+<select id="product" name="product" required>
+<option value="">Choose a product</option>
+<option>Therapist Caseload Tracker</option>
+<option>Other</option>
+</select>
+<label for="working">What's working</label>
+<p class="hint">Please don't include any client information, names, or health details.</p>
+<textarea id="working" name="working" rows="5"></textarea>
+<label for="improve">What to improve or add</label>
+<p class="hint">Please don't include any client information, names, or health details.</p>
+<textarea id="improve" name="improve" rows="5"></textarea>
+<label for="email">Email for follow-up <span class="opt">(optional)</span></label>
+<input id="email" name="email" type="email" autocomplete="email">
+<fieldset>
+<legend>May we quote your feedback?</legend>
+<label class="radio"><input type="radio" name="quote" value="No" checked> No</label>
+<label class="radio"><input type="radio" name="quote" value="Yes"> Yes</label>
+</fieldset>
+<p id="err" class="err" role="alert" hidden>Please choose a product.</p>
+<div class="actions">
+<button type="submit" class="btn">Send feedback</button>
+<button type="button" id="copy" class="btn btn-secondary">Copy my answers</button>
+</div>
+<p id="status" class="status" aria-live="polite"></p>
+</form>
+<p class="fallback">No email app? Copy your answers and send them to <a href="mailto:spartalabs@mail.grokbot.com">spartalabs@mail.grokbot.com</a> from any email account.</p>
+</div></section>
+<script src="feedback.js"></script>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<nav><a href="./">Feedback</a><a href="../privacy.html">Privacy Policy</a><a href="../terms.html">Terms</a><a href="../refund.html">Refund Policy</a></nav>
+<p>© 2026 Sparta Labs</p>
+</div></footer>
+</body>
+</html>

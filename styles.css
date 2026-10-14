@@ -39,4 +39,21 @@ figcaption{font-size:.9rem;color:#5b6775;margin-top:6px}
 .site-footer{border-top:1px solid #e3e8ee;padding:28px 0;font-size:.95rem;color:#5b6775}
 .site-footer nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:8px}
 .site-footer a{color:#3a4756}
-@media (max-width:480px){.nav nav a{margin-left:12px}.hero{padding:48px 0 40px}.product{padding:20px}}
+.brand{white-space:nowrap}@media (max-width:480px){.nav nav a{margin-left:10px;font-size:.95rem}.brand{font-size:1rem}.hero{padding:48px 0 40px}.product{padding:20px}}
+.page-title{color:#1f3a5f;margin-top:0}
+.form{display:flex;flex-direction:column;gap:6px;margin-top:20px}
+.form label{font-weight:600;margin-top:14px}
+.form .radio{font-weight:400;margin:4px 18px 0 0;display:inline-flex;align-items:center;gap:6px}
+.form select,.form textarea,.form input[type=email]{width:100%;font:inherit;padding:10px 12px;border:1px solid #c9d2dc;border-radius:8px;background:#fff;color:inherit}
+.form select:focus,.form textarea:focus,.form input:focus{outline:2px solid #1f5fa8;outline-offset:1px}
+.form fieldset{border:0;padding:0;margin:14px 0 0}
+.form legend{font-weight:600;padding:0}
+.hint{margin:0;font-size:.9rem;color:#5b6775}
+.req,.opt{font-weight:400;color:#5b6775;font-size:.9rem}
+.err{color:#b91c1c;font-weight:600;margin:10px 0 0}
+.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:18px}
+button.btn{border:0;cursor:pointer;font:inherit;font-weight:600}
+.btn-secondary{background:#fff;color:#1f3a5f;border:1px solid #1f3a5f !important}
+.btn-secondary:hover{background:#eef3f8}
+.status{min-height:1.5em;color:#3a4756}
+.fallback{margin-top:20px;color:#3a4756;word-break:break-word}
