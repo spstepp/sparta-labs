@@ -1,0 +1,42 @@
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:#1d2733;line-height:1.6;background:#fff}
+img{max-width:100%;height:auto;display:block}
+a{color:#1f5fa8}
+.wrap{max-width:1040px;margin:0 auto;padding:0 20px}
+.narrow{max-width:760px}
+.site-header{border-bottom:1px solid #e3e8ee;background:#fff;position:sticky;top:0;z-index:5}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px;gap:12px}
+.brand{display:flex;align-items:center;gap:8px;font-weight:700;font-size:1.1rem;color:#1f3a5f;text-decoration:none}
+.nav nav a{margin-left:18px;color:#1d2733;text-decoration:none;font-weight:500}
+.nav nav a:hover{color:#1f5fa8}
+.hero{background:linear-gradient(180deg,#f2f6fa,#fff);padding:72px 0 56px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.4rem);margin:0 0 12px;color:#1f3a5f;line-height:1.1}
+.lead{font-size:1.2rem;max-width:620px;margin:0 0 24px;color:#3a4756}
+.btn{display:inline-block;background:#1f3a5f;color:#fff;text-decoration:none;padding:12px 22px;border-radius:8px;font-weight:600}
+.btn:hover{background:#2c5282}
+.btn-buy{background:#c2410c;font-size:1.05rem}
+.btn-buy:hover{background:#9a3412}
+.section{padding:56px 0}
+.section.alt{background:#f6f8fa}
+h2{font-size:1.7rem;margin:0 0 20px;color:#1f3a5f}
+.product{border:1px solid #e3e8ee;border-radius:12px;padding:28px;background:#fff}
+.product h3{margin:0;font-size:1.4rem}
+.meta{color:#5b6775;margin:4px 0 14px}
+.product ul{padding-left:20px}
+.note{background:#fff7ed;border-left:4px solid #c2410c;padding:12px 16px;border-radius:4px}
+.delivery{color:#3a4756}
+.buy{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:18px}
+.price{font-size:1.8rem;font-weight:700}
+.shots{display:grid;gap:28px;margin-top:36px}
+figure{margin:0}
+figure img{border:1px solid #e3e8ee;border-radius:8px}
+figcaption{font-size:.9rem;color:#5b6775;margin-top:6px}
+.email{font-size:1.15rem;font-weight:600;word-break:break-all}
+.policy h1{color:#1f3a5f;margin-bottom:4px}
+.policy h2{font-size:1.2rem;margin:28px 0 8px}
+.updated{color:#5b6775;margin-top:0}
+.site-footer{border-top:1px solid #e3e8ee;padding:28px 0;font-size:.95rem;color:#5b6775}
+.site-footer nav{display:flex;flex-wrap:wrap;gap:8px 20px;margin-bottom:8px}
+.site-footer a{color:#3a4756}
+@media (max-width:480px){.nav nav a{margin-left:12px}.hero{padding:48px 0 40px}.product{padding:20px}}
