@@ -61,7 +61,6 @@ button.btn{border:0;cursor:pointer;font:inherit;font-weight:600}
 /* Product grid and cards */
 [id]{scroll-margin-top:76px}
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.start-free{margin:16px 0 0;color:#3a4756}
 .section-intro{margin:-8px 0 24px;color:#3a4756}
 .grid{display:grid;gap:24px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));margin:24px 0}
 .card{display:flex;flex-direction:column;border:1px solid #e3e8ee;border-radius:12px;background:#fff;overflow:hidden}
@@ -83,15 +82,15 @@ button.btn{border:0;cursor:pointer;font:inherit;font-weight:600}
 .price-free{color:#14532d;font-size:1.2rem}
 .card-featured{border:2px solid #c2410c;box-shadow:0 2px 14px rgba(194,65,12,.12)}
 .card-free{border-color:#b7dcc2;background:#f7fbf8}
-.card-featured,.card-free{margin:0 0 24px}
+.card-featured,.card-free,.card-wide{margin:0 0 24px}
 .card-free{margin-top:0}
-.card-featured .card-summary,.card-free .card-summary{font-size:1.02rem}
+.card-featured .card-summary,.card-free .card-summary,.card-wide .card-summary{font-size:1.02rem}
 @media (min-width:720px){
- .card-featured,.card-free{flex-direction:row;align-items:stretch}
- .card-featured .card-media,.card-free .card-media{flex:0 0 300px}
- .card-featured .card-body,.card-free .card-body{justify-content:center;padding:28px}
- .card-featured h3,.card-free h3{font-size:1.5rem}
- .card-featured .card-body .buy,.card-free .card-body .buy{margin-top:6px}
+ .card-featured,.card-free,.card-wide{flex-direction:row;align-items:stretch}
+ .card-featured .card-media,.card-free .card-media,.card-wide .card-media{flex:0 0 300px}
+ .card-featured .card-body,.card-free .card-body,.card-wide .card-body{justify-content:center;padding:28px}
+ .card-featured h3,.card-free h3,.card-wide h3{font-size:1.5rem}
+ .card-featured .card-body .buy,.card-free .card-body .buy,.card-wide .card-body .buy{margin-top:6px}
 }
 #products>.wrap>.note{margin-top:24px}
 
@@ -121,3 +120,21 @@ button.btn{border:0;cursor:pointer;font:inherit;font-weight:600}
 
 .shot-wide{grid-column:1/-1}
 @media (max-width:480px){.compare{font-size:.88rem}.compare th,.compare td{padding:6px 7px}}
+
+/* Secondary "Try the free Lite version first" spots */
+.lite-spot{display:flex;flex-direction:column;align-items:flex-start;gap:10px;border:1px solid #b7dcc2;background:#f7fbf8;border-radius:10px;padding:14px 16px}
+.lite-spot p{margin:0}
+.lite-title{font-weight:700;color:#1f3a5f}
+.lite-title .badge{margin:0 6px 0 0;padding:2px 8px;font-size:.72rem;vertical-align:1px}
+.lite-copy{font-size:.95rem;color:#3a4756;margin-top:4px !important}
+.btn-outline{background:#fff;color:#1f3a5f;border:2px solid #1f3a5f;padding:8px 16px;font-weight:600;font-size:.95rem}
+.btn-outline:hover{background:#eef3f8;color:#1f3a5f}
+.lite-hero{margin-top:22px;max-width:640px}
+.lite-home{margin-top:16px}
+.card-wide .card-more{margin-bottom:0}
+.lite-detail{margin-top:18px}
+@media (min-width:720px){
+ .lite-hero,.lite-home,.lite-detail{flex-direction:row;align-items:center;justify-content:space-between;gap:18px}
+ .lite-hero .btn,.lite-home .btn,.lite-detail .btn{flex:0 0 auto;white-space:nowrap}
+}
+@media (max-width:480px){.lite-spot .btn{width:100%;text-align:center}}
