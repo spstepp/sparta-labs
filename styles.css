@@ -142,3 +142,6 @@ button.btn{border:0;cursor:pointer;font:inherit;font-weight:600}
 .card-more .sep{color:#8a94a1;margin:0 2px}
 .also-etsy{margin:10px 0 0;font-size:.95rem}
 .buy-end+.also-etsy{margin-top:10px}
+.contact-note{font-size:.85em;font-weight:400;font-style:italic}
+.contact-note::before{content:" ("}
+.contact-note::after{content:")"}

@@ -1,5 +1,6 @@
 (function () {
-  var TO = "spartalabs@mail.grokbot.com";
+  // The address is built at use time by /contact.js; it is not written in this file.
+  function to() { return window.SpartaContact ? window.SpartaContact.address() : ""; }
   function build(f) {
     var product = f.product.value;
     var q = f.querySelector('input[name="quote"]:checked');
@@ -17,7 +18,7 @@
     ].join("\r\n");
     var subject = "Feedback: " + product;
     return { subject: subject, body: body,
-      href: "mailto:" + TO + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body) };
+      href: "mailto:" + to() + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body) };
   }
   window.sparta_buildFeedback = build;
   var f = document.getElementById("fb");
@@ -37,7 +38,7 @@
   });
   document.getElementById("copy").addEventListener("click", function () {
     if (!valid()) return;
-    var m = build(f), text = "To: " + TO + "\nSubject: " + m.subject + "\n\n" + m.body.replace(/\r\n/g, "\n");
+    var m = build(f), TO = to(), text = "To: " + TO + "\nSubject: " + m.subject + "\n\n" + m.body.replace(/\r\n/g, "\n");
     function done() { status.textContent = "Copied. Paste it into an email to " + TO + "."; }
     if (navigator.clipboard && window.isSecureContext) {
       navigator.clipboard.writeText(text).then(done, fallback);
