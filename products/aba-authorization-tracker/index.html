@@ -30,7 +30,40 @@
   "price": "14",
   "priceCurrency": "USD",
   "url": "https://spartalabs.lemonsqueezy.com/checkout/buy/a9c6f566-556e-496d-a615-aaacb1b288e1",
-  "availability": "https://schema.org/InStock"
+  "availability": "https://schema.org/InStock",
+  "hasMerchantReturnPolicy": {
+   "@type": "MerchantReturnPolicy",
+   "applicableCountry": "US",
+   "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted",
+   "merchantReturnLink": "https://spartasite.com/refund.html"
+  },
+  "shippingDetails": {
+   "@type": "OfferShippingDetails",
+   "shippingRate": {
+    "@type": "MonetaryAmount",
+    "value": "0",
+    "currency": "USD"
+   },
+   "shippingDestination": {
+    "@type": "DefinedRegion",
+    "addressCountry": "US"
+   },
+   "deliveryTime": {
+    "@type": "ShippingDeliveryTime",
+    "handlingTime": {
+     "@type": "QuantitativeValue",
+     "minValue": 0,
+     "maxValue": 0,
+     "unitCode": "DAY"
+    },
+    "transitTime": {
+     "@type": "QuantitativeValue",
+     "minValue": 0,
+     "maxValue": 0,
+     "unitCode": "DAY"
+    }
+   }
+  }
  }
 }
 </script>
