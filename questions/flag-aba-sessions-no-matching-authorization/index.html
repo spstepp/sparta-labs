@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How ABA Providers Catch Sessions That Don't Match an Authorization | Sparta Labs</title>
+<meta name="description" content="A simple check for ABA practices: flag sessions with no matching authorization, the wrong CPT code, or a date outside the authorized period, before they are billed.">
+<link rel="canonical" href="https://templates.spartasite.com/questions/flag-aba-sessions-no-matching-authorization/">
+<link rel="icon" href="../../favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sparta Labs">
+<meta property="og:title" content="How ABA Providers Catch Sessions That Don't Match an Authorization | Sparta Labs">
+<meta property="og:description" content="A simple check for ABA practices: flag sessions with no matching authorization, the wrong CPT code, or a date outside the authorized period, before they are billed.">
+<meta property="og:url" content="https://templates.spartasite.com/questions/flag-aba-sessions-no-matching-authorization/">
+<meta property="og:image" content="https://templates.spartasite.com/images/dashboard.png">
+<link rel="stylesheet" href="../../styles.css">
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "How do ABA providers catch sessions that don't match an authorization?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A session should match an authorization on three things: the client, the CPT code and the date. If the code is wrong, the date falls outside the authorized period, or the client has no active authorization for that code, the session doesn't belong in that pool of units. Checking this as you log sessions, not after a claim comes back, is how you catch the mismatch while it's still easy to fix."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What if a new authorization starts before the old one ends?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "A session that falls inside both date ranges can count toward both. Start the new row the day after the old one ends, or set the dates to match what your payer approved."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "The payer authorized hours, not units. Does the same check work?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Yes, as long as you enter sessions and authorizations in the same measure. Many practices convert hours to 15-minute units (multiply by 4) and stay with units for that code."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "Should cancelled sessions be flagged?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Cancelled sessions don't use units, but they still need a client, code, date and status in the log. A missing status is worth flagging, because an unlabeled row can't be counted or excluded on purpose."
+   }
+  }
+ ]
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "Sparta Labs",
+   "item": "https://templates.spartasite.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "Practice questions",
+   "item": "https://templates.spartasite.com/questions/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 3,
+   "name": "How do ABA providers catch sessions that don't match an authorization?",
+   "item": "https://templates.spartasite.com/questions/flag-aba-sessions-no-matching-authorization/"
+  }
+ ]
+}
+</script>
+</head>
+<body>
+<header class="site-header"><div class="wrap nav">
+<a class="brand" href="../../"><img src="../../favicon.svg" alt="" width="28" height="28">Sparta Labs</a>
+<nav><a href="../../#products">Products</a><a href="../../feedback/">Feedback</a><a href="../../#contact">Contact</a></nav>
+</div></header>
+<main>
+
+<section class="section policy"><div class="wrap narrow">
+<p class="crumb"><a href="../">&larr; All practice questions</a></p>
+<h1>How do ABA providers catch sessions that don't match an authorization?</h1>
+<p class="lead">A session should match an authorization on three things: the client, the CPT code and the date. If the code is wrong, the date falls outside the authorized period, or the client has no active authorization for that code, the session doesn't belong in that pool of units. Checking this as you log sessions, not after a claim comes back, is how you catch the mismatch while it's still easy to fix.</p>
+<h2>How to set it up</h2>
+<ol>
+<li><strong>Keep one authorization row per client per CPT code,</strong> with the units approved and the start and end dates from the payer's letter.</li>
+<li><strong>Log each session with the client ID, CPT code, date, units, provider and status</strong> (scheduled, completed or cancelled).</li>
+<li><strong>Treat a session as a match only when the client and CPT code agree and the date sits between the authorization's start and end.</strong> Direct treatment, protocol modification, parent training and assessment are usually separate pools, so a 97153 session does not use 97155 units.</li>
+<li><strong>Flag anything that doesn't match:</strong> an unknown client ID, a missing status, a date outside the authorized period, or a code with no authorization row.</li>
+<li><strong>Fix the row before it's billed.</strong> The usual causes are a typo in the code, a session logged under the wrong client, an authorization that hasn't been entered yet, or a date that belongs to the next (or last) authorization.</li>
+<li><strong>Also watch active clients who have no current authorization</strong> for the codes you are scheduling, so gaps show up before the week is booked.</li>
+</ol>
+<p class="note">Authorization terms, covered codes and what you may bill come from each payer and plan. This is a record-keeping check, not billing advice. Verify each authorization with your payer and follow your organization's billing rules.</p>
+<h2>A template that does this</h2>
+<p>Our <a href="../../products/aba-authorization-tracker/">ABA/BCBA Authorization &amp; Caseload Tracker</a> ($14, Excel and Google Sheets) counts a session toward an authorization only when the client ID and CPT code match and the session date falls between that row's start and end dates. The Sessions tab has a Check column that flags an unknown client ID, no matching authorization (wrong CPT code or a date outside the period), or a missing status. The Clients tab flags an Active client with no active authorization. Completed sessions use units, scheduled ones show as reserved, and cancelled ones count toward neither.</p>
+
+<h2>Common follow-up questions</h2>
+<h3>What if a new authorization starts before the old one ends?</h3>
+<p>A session that falls inside both date ranges can count toward both. Start the new row the day after the old one ends, or set the dates to match what your payer approved.</p>
+<h3>The payer authorized hours, not units. Does the same check work?</h3>
+<p>Yes, as long as you enter sessions and authorizations in the same measure. Many practices convert hours to 15-minute units (multiply by 4) and stay with units for that code.</p>
+<h3>Should cancelled sessions be flagged?</h3>
+<p>Cancelled sessions don't use units, but they still need a client, code, date and status in the log. A missing status is worth flagging, because an unlabeled row can't be counted or excluded on purpose.</p>
+<h2>Related questions</h2>
+<ul><li><a href="../how-aba-providers-track-authorization-units/">How do ABA providers track authorization units?</a></li><li><a href="../when-to-start-aba-reauthorization-request/">When should ABA providers start a reauthorization request?</a></li></ul>
+<p>Sparta Labs templates are spreadsheets for organizing your practice. They aren't an EHR, billing or clinical advice, or a HIPAA compliance solution.</p>
+</div></section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+<nav><a href="../../feedback/">Feedback</a><a href="../../questions/">Practice questions</a><a href="../../privacy.html">Privacy Policy</a><a href="../../terms.html">Terms</a><a href="../../refund.html">Refund Policy</a><a href="https://www.etsy.com/shop/SpartaLabs" target="_blank" rel="noopener">Find us on Etsy</a></nav>
+<p>© 2026 Sparta Labs</p>
+</div></footer>
+</body>
+</html>
