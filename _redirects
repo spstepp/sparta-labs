@@ -1,0 +1,8 @@
+# 301 typo and short paths to the live License & CE Renewal Tracker.
+# Same Cloudflare Pages _redirects format as the apex host-move file on sparta-hub.
+# Do not add /products/ce-tracker/ as a second product page.
+# Keep the existing apex 301 from https://spartasite.com/products/ce-renewal-tracker/ (already in place on the hub).
+/ce-renewal-tracker                     /products/ce-renewal-tracker/  301
+/ce-renewal-tracker/                    /products/ce-renewal-tracker/  301
+/products/license-ce-renewal-tracker    /products/ce-renewal-tracker/  301
+/products/license-ce-renewal-tracker/   /products/ce-renewal-tracker/  301

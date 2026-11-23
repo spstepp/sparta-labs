@@ -3,14 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>How to Track Insurance Authorization Visits Left | Sparta Labs</title>
-<meta name="description" content="See how many authorized visits each client has left and when the authorization ends, so the next request goes in on time.">
+<title>Insurance Authorization Tracking: Visits Left and End Dates | Sparta Labs</title>
+<meta name="description" content="Insurance authorization tracking for therapists: see visits left and end dates for every client, and get the next request in before either runs out.">
 <link rel="canonical" href="https://templates.spartasite.com/questions/track-insurance-authorization-visits-left/">
 <link rel="icon" href="../../favicon.svg" type="image/svg+xml">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Sparta Labs">
-<meta property="og:title" content="How to Track Insurance Authorization Visits Left | Sparta Labs">
-<meta property="og:description" content="See how many authorized visits each client has left and when the authorization ends, so the next request goes in on time.">
+<meta property="og:title" content="Insurance Authorization Tracking: Visits Left and End Dates | Sparta Labs">
+<meta property="og:description" content="Insurance authorization tracking for therapists: see visits left and end dates for every client, and get the next request in before either runs out.">
 <meta property="og:url" content="https://templates.spartasite.com/questions/track-insurance-authorization-visits-left/">
 <meta property="og:image" content="https://templates.spartasite.com/images/dashboard.png">
 <link rel="stylesheet" href="../../styles.css">
@@ -25,6 +25,14 @@
    "acceptedAnswer": {
     "@type": "Answer",
     "text": "Keep one row per authorization with the authorization number, the number of visits the payer approved, and the start and end dates. Count the sessions that actually took place between those dates and subtract them from the approved number. Check it every week, and ask for the next authorization before either the visits or the dates run out."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "What should an insurance authorization tracking tool do?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Hold the authorization number, approved visits and start and end dates for each client, count only the sessions held inside those dates, and warn you when visits run low or the end date gets close. It also helps to see every client with a problem on one list instead of opening each chart. Our tracker's Dashboard shows a Needs attention list and a count of authorizations ending within 30 days. The low-visit and end-date warnings are settings you can change."
    }
   },
   {
@@ -106,6 +114,8 @@
 <p>Our <a href="../../products/caseload-tracker/">Therapist Caseload &amp; Insurance Authorization Tracker</a> ($24, Excel and Google Sheets) does this counting for you. You type each client's authorization number, approved visits and dates once. The Authorizations tab counts attended sessions inside those dates and shows OK, Low visits (with the number left), Ends in N days, or EXPIRED. Late cancels and no-shows don't use up a visit in the tracker. If your payer counts them differently, adjust for that.</p>
 <div class="lite-spot lite-detail"><div class="lite-text"><p class="lite-title">Start with the free Lite version.</p><p class="lite-copy">Lite holds up to 5 clients, 60 sessions and 3 insurance authorizations in Excel or Google Sheets. The full tracker raises those limits to 200 clients, 1,000 sessions and 200 authorizations.</p></div><a class="btn btn-outline store-link" href="https://spartalabs.gumroad.com/l/pmckuh">Get Lite &mdash; Free</a></div>
 <h2>Common follow-up questions</h2>
+<h3>What should an insurance authorization tracking tool do?</h3>
+<p>Hold the authorization number, approved visits and start and end dates for each client, count only the sessions held inside those dates, and warn you when visits run low or the end date gets close. It also helps to see every client with a problem on one list instead of opening each chart. Our tracker's Dashboard shows a Needs attention list and a count of authorizations ending within 30 days. The low-visit and end-date warnings are settings you can change.</p>
 <h3>Do late cancels and no-shows use up an authorized visit?</h3>
 <p>Usually only a session that was held and billed counts as a visit, but the payer sets the rule. Check the terms of each authorization. Our tracker counts only sessions marked Attended.</p>
 <h3>When should I ask for a re-authorization?</h3>
